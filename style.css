@@ -1,0 +1,192 @@
+#favorites .description,
+#favorites #picSaveBtn {
+  display: none;
+}
+
+#showImg #picSaveBtn {
+  display: block;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-style: italic;
+  margin-top: 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#showImg {
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+.picBox {
+  margin-right: 20px;
+}
+
+.picBox img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.description {
+  width: 300px;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#picSaveBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#picSaveBtn:hover {
+  background-color: #0056b3;
+}
+
+.picInfo .clearFavBtn {
+  display: none;
+}
+
+#favorites .clearFavBtn {
+  display: block;
+}
+
+#favorites {
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+#favorites .picDiv {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+#favorites .picDiv img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+#favorites .picInfo {
+  width: 450px;
+}
+
+.clearFavBtn {
+  padding: 7px 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clearFavBtn:hover {
+  background-color: #e55347;
+}
+
+.picDiv {
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .picDiv {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .picBox {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .picBox img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #favorites .picDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  #favorites .picDiv img {
+    width: 100%;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .picInfo,
+  #favorites .picInfo {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .description {
+    width: 100%;
+  }
+}
